@@ -15,8 +15,8 @@ namespace FIzzBuzzMVC
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{id}",//url address. action always needs to correspond to method in controller
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }//menu bar links
             );
         }
     }
